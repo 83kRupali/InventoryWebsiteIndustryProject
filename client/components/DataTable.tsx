@@ -19,6 +19,7 @@ interface DataTableProps<T> {
   paginated?: boolean;
   pageSize?: number;
   title?: string;
+  renderActions?: () => React.ReactNode;
 }
 
 export default function DataTable<T extends Record<string, any>>({
