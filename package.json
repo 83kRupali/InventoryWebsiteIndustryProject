@@ -16,7 +16,7 @@
     "dev:backend": "cd backend && uvicorn predict_api:app --reload --host 0.0.0.0 --port 8000",
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.ts",
+    "build:server": "tcs",
     "start": "node dist/server/start.ts",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
